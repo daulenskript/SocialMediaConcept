@@ -58,5 +58,22 @@ public class User {
         this.following = following;
     }
 
+    public void addPost(Post post) {
+        posts.add(post);
+    }
+
+    public void removePost(Post post) {
+        posts.remove(post);
+    }
+
+    public void follow(User followed) {
+        followers.add(followed);
+
+    }
+
+    public void addFollower(User follower) {
+        followers.add(follower);
+    }
+
     // Getters, setters, and other methods
 }

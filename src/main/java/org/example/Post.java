@@ -58,5 +58,18 @@ public class Post {
         this.comments = comments;
     }
 
+    public void incrementLikes() {
+        this.likes++;
+    }
+
+    public void addComment(Comment comment) {
+        this.comments.add(comment);
+
+    }
+
+    public void removeComment(Comment comment) {
+        this.comments.remove(comment);
+    }
+
     // Getters, setters, and other methods
 }
